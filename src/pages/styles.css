@@ -122,7 +122,9 @@ p{
   }
 
   *{
-    overflow: hidden;
+    overflow: hidden ;
+    margin: 0;
+    padding: 0;
   }
 
   .general{
@@ -138,15 +140,13 @@ p{
   }
 
   .circle1{
-    z-index: 0;
     top: -25%;
     left: -50%;
   }
   
   .circle2{
-    z-index: 0;
-    bottom: -25%;
-    right: -50%;
+    display: none;
+    
   }
 
   .card{

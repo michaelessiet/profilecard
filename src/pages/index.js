@@ -16,7 +16,6 @@ const IndexPage = () => (
     <div className="circle2 absolute">
       <img className="circles" src={circle2} alt="" />
     </div>
-    <div className="circle2"></div>
     <div className="card">
       <div className="cardbg"></div>
       <div className="cardimage">
