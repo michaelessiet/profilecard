@@ -1,22 +1,56 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import "./styles.css"
+import circle2 from "../images/bg-pattern-bottom.svg"
+import circle1 from "../images/bg-pattern-top.svg"
+import victor from "../images/image-victor.jpg"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <div className="general flex">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <div className="circle1 absolute">
+      <img className="circles" src={circle1} alt="" />
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+    <div className="circle2 absolute">
+      <img className="circles" src={circle2} alt="" />
+    </div>
+    <div className="circle2"></div>
+    <div className="card">
+      <div className="cardbg"></div>
+      <div className="cardimage">
+        <img src={victor} className="victor" alt="" />
+      </div>
+      <br />
+      <div className="card-content">
+        <h3 className="name flex">
+          Victor Crest <h3 className="age">26</h3>
+        </h3>
+      </div>
+      <br />
+      <h4 className="london">London</h4>
+      <br />
+      <br />
+      <br/>
+      <hr />
+      <br />
+      <div className="card-footer">
+        <div className="footer-item">
+          <h4>80k</h4>
+          <p>Followers</p>
+        </div>
+        <div className="footer-item">
+          <h4>803k</h4>
+          <p>Likes</p>
+        </div>
+        <div className="footer-item">
+          <h4>1.4k</h4>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
 )
 
 export default IndexPage

@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Kumbh Sans;
+}
+
+.general{
+  background-color: hsl(185, 75%, 39%);
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 0;
+}
+
+.circles{
+  height: 110vh;
+}
+
+.circle1{
+  top: -50%;
+  left: -10%;
+}
+
+.circle2{
+  bottom: -60%;
+  right: -10%;
+}
+
+.card{
+  background-color: white;
+  z-index: 1;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 14px 29px 0 rgba(0, 0, 0, 0.2), 0 16px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  width: 28rem;
+}
+
+.cardbg{
+  height: 10rem;
+  background-repeat: stretch;
+  width: 28rem;
+  background-image: url(../images/bg-pattern-card.svg);
+}
+
+.cardimage{
+  margin-top: -60px;
+  background-color: white;
+  clip-path: circle();  
+}
+
+.victor{
+  clip-path: circle();
+  width: 120px;
+}
+
+.card-content{
+  width: 10rem;
+}
+
+h3, h4{
+  font-size: 18px;
+}
+
+.london{
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.name{
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+hr{
+  width: 30rem;
+  opacity: 50%;
+}
+
+.age{
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.card-footer{
+  display: flex;
+  width: 20rem;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  color: hsl(0, 0%, 59%);
+  margin: 5px;
+}
+
+@media(max-width:520px){
+  html{
+    overflow: hidden;
+  }
+
+  *{
+    overflow: hidden;
+  }
+
+  .general{
+    background-color: hsl(185, 75%, 39%);
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .circles{
+    height: 50vh;
+  }
+
+  .circle1{
+    z-index: 0;
+    top: -25%;
+    left: -50%;
+  }
+  
+  .circle2{
+    z-index: 0;
+    bottom: -25%;
+    right: -50%;
+  }
+
+  .card{
+    width: 20rem;
+    height: 25rem;
+  }
+}
+
