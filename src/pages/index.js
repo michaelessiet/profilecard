@@ -22,17 +22,19 @@ const IndexPage = () => (
         <img src={victor} className="victor" alt="" />
       </div>
       <br />
+      <br/>
       <div className="card-content">
         <h3 className="name flex">
           Victor Crest <h3 className="age">26</h3>
         </h3>
       </div>
       <br />
+      <br/>
       <h4 className="london">London</h4>
       <br />
       <br />
       <br/>
-      <hr />
+      <div className='hr' />
       <br />
       <div className="card-footer">
         <div className="footer-item">
@@ -48,6 +50,9 @@ const IndexPage = () => (
           <p>Photos</p>
         </div>
       </div>
+    </div>
+    <div className="footer">
+      <p>Challenge by <a href="https://www.frontendmentor.io/solutions">Frontendmentor</a>. Coded by <a href="https://profilecard-black.vercel.app/">Michael Essiet</a></p>
     </div>
   </div>
 )
